@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="icon" type= "image/png" href="logofull.png">
+    <style type="text/css">
+        body, td, th {
+            font-family: 'SF Pro Text', sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            overflow-y: scroll;
+            resize: none;
+            background-image: url('historyfon-6.jpg');
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+        }
+
+        .static-image-container {
+            position: absolute;
+			top: 723px;
+            width: 100%; 
+            overflow: hidden; 
+        }
+		
+        .static-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+		
+		.first-image {
+            position: absolute;
+            top: 100px;
+            left: 180px;
+            width: 13%;
+            height: auto;
+            display: block;
+            z-index: 1; 
+        }
+		
+		.second-image {
+			position: absolute;
+            top: 100px;
+            left: 840px;
+            width: 15%;
+            height: auto;
+            display: block;
+            z-index: 1;
+		}
+		
+		.third-image {
+			position: absolute;
+            top: 100px;
+            left: 1520px;
+            width: 18%;
+            height: auto;
+            display: block;
+            z-index: 1;
+		}
+		
+		.four-image {
+			position: absolute;
+            top: 550px;
+            left: 1520px;
+            width: 18%;
+            height: auto;
+            display: block;
+            z-index: 1;
+		}
+		
+		.five-image {
+			position: absolute;
+            top: 565px;
+            left: 870px;
+            width: 18%;
+            height: auto;
+            display: block;
+            z-index: 1;
+		}
+		
+		.end-image {
+			position: absolute;
+            top: 570px;
+            left: 180px;
+            width: 19%;
+            height: auto;
+            display: block;
+            z-index: 1;
+		}
+		
+		.first-text {
+            position: absolute;
+            top: 790px;
+            left: 315px;
+            transform: translate(-50%, -50%);
+            font-size: 37px; 
+            font-family: 'SF Pro Text'; 
+            letter-spacing: 6px; 
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5); 
+            display: block;
+			color: #826552;
+        }
+		
+		.second-text {
+            position: absolute;
+            top: 790px;
+            left: 1000px;
+            transform: translate(-50%, -50%);
+            font-size: 37px; 
+            font-family: 'SF Pro Text'; 
+            letter-spacing: 6px; 
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5); 
+            display: block;
+			color: #826552;
+        }
+		
+		.third-text {
+            position: absolute;
+            top: 790px;
+            left: 1710px;
+            transform: translate(-50%, -50%);
+            font-size: 37px; 
+            font-family: 'SF Pro Text'; 
+            letter-spacing: 6px; 
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5); 
+            display: block;
+			color: #826552;
+        }
+		
+		.four-text {
+            position: absolute;
+            top: 1550px;
+            left: 1710px;
+            transform: translate(-50%, -50%);
+            font-size: 37px; 
+            font-family: 'SF Pro Text'; 
+            letter-spacing: 6px; 
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5); 
+            display: block;
+			color: #826552;
+        }
+		
+		.five-text {
+            position: absolute;
+            top: 1550px;
+            left: 1050px;
+            transform: translate(-50%, -50%);
+            font-size: 37px; 
+            font-family: 'SF Pro Text'; 
+            letter-spacing: 6px; 
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5); 
+            display: block;
+			color: #826552;
+        }
+		
+		.end-text {
+            position: absolute;
+            top: 1550px;
+            left: 360px;
+            transform: translate(-50%, -50%);
+            font-size: 37px; 
+            font-family: 'SF Pro Text'; 
+            letter-spacing: 6px; 
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5); 
+            display: block;
+			color: #826552;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index-2.html">Главная</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <img class="logo" src="layer-0.png" alt="Logo">
+    </nav>
+    <div class="static-image-container">
+        <img class="static-image" src="eraes.jpg" alt="Blocks">
+		<a href="70-e.html">
+			<img class="first-image" src="first.jpg" alt="First Image">
+		</a>
+		<a href="80-e.html">
+			<img class="second-image" src="secondjpg.jpg" alt="Second Image">
+		</a>
+		<a href="90-e.html">
+			<img class="third-image" src="third.jpeg" alt="Third Image">
+		</a>
+		<a href="00-e.html">
+			<img class="four-image" src="four.jpg" alt="Four Image">
+		</a>
+		<a href="10-e.html">
+			<img class="five-image" src="five.jpg" alt="Five Image">
+		</a>
+		<img class="end-image" src="end-2.jpg" alt="End Image">
+    </div>
+	<div class="first-text">70-е</div>
+	<div class="second-text">80-е</div>
+	<div class="third-text">90-е</div>
+	<div class="four-text">00-е</div>
+	<div class="five-text">10-е</div>
+	<div class="end-text">???</div>
+</body>
+</html>
